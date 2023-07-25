@@ -30,11 +30,28 @@ Array.prototype.findIndex();
 Array.prototype.includes();
 Array.prototype.indexOf();
 Array.isArray();
+
 Array.prototype.join();
+// example
+function joinMethod(arr) {
+  return arr.join();
+}
+const array11 = ["this", "an", "array"];
+console.log(joinMethod(array11));
+
 Array.prototype.map();
 Array.prototype.pop();
 Array.prototype.push();
+
 Array.prototype.reduce();
+
+function productofNumbers(arr) {
+  return arr.reduce((accumulator, currentValue) => accumulator * currentValue);
+}
+const array2 = [3, 4, 5, 3];
+const result1 = productofNumbers(array2);
+console.log(result1);
+
 Array.prototype.reduceRight();
 Array.prototype.reverse();
 Array.prototype.shift();
