@@ -13,14 +13,12 @@ Array.prototype.entries();
 // 3
 
 Array.prototype.every();
-
 const isPositiveEven = (value) => value % 2 === 0;
 const array = [1, 4, 6, 3];
 console.log(isPositiveEven(array));
 
 // 4
 Array.prototype.filter();
-
 const array1 = [2, 3, 5, 6, 7, 10, 14, 17];
 const result = array1.filter((num) => num % 2 === 0);
 console.log(result);
@@ -29,7 +27,10 @@ Array.prototype.find();
 Array.prototype.findIndex();
 Array.prototype.includes();
 Array.prototype.indexOf();
+
 Array.isArray();
+// example
+console.log(Array.isArray(["blog", "blah"]));
 
 Array.prototype.join();
 // example
@@ -40,11 +41,25 @@ const array11 = ["this", "an", "array"];
 console.log(joinMethod(array11));
 
 Array.prototype.map();
+// example
+function multiplier(arr) {
+  const multiplier1 = arr.map((x) => x * 2);
+  return multiplier1;
+}
+const numbers = [2, 4, 5, 6, 10];
+console.log(multiplier(numbers));
+
 Array.prototype.pop();
-Array.prototype.push();
+// example
+function popMethod(arr) {
+  const popeye = arr.pop();
+  return popeye;
+}
+const popeyeArray = ["blah", "bleh", "dang"];
+const callingPopeye = popMethod(popeyeArray);
+console.log(callingPopeye);
 
 Array.prototype.reduce();
-
 function productofNumbers(arr) {
   return arr.reduce((accumulator, currentValue) => accumulator * currentValue);
 }
