@@ -31,9 +31,23 @@ const findMethod1 = array9.find((x) => x === "o");
 console.log(findMethod1);
 
 // Array.prototype.findIndex();
+console.log("-----------------------");
+const findIndexMethod = [3, 5, 10, 13, 20, 25];
+const findIndexMethodTest = findIndexMethod.findIndex((x) => x % 2 === 0);
+console.log(findIndexMethodTest);
+
 // Array.prototype.includes();
+
+const includesMethod = ["this", "is", "shitty", "example"];
+const includesMethodTest = includesMethod.includes("shitty");
+console.log(includesMethodTest);
+
 // Array.prototype.indexOf();
 
+const trial = ["aditi", "is", "sad", "today"];
+const index = trial.indexOf("is");
+
+console.log(index);
 // Array.isArray();
 // example
 console.log(Array.isArray(["blog", "blah"]));
@@ -109,8 +123,37 @@ console.log(slicedArray3);
 
 // Array.prototype.some(); If you need to find if any element satisfies the provided testing function, use some().
 
+console.log("some method test");
+const someMethod = [
+  "this is an array of strings",
+  "I dont know tf i am doing",
+  "I just wanna sleep",
+  "but sleep eludes me",
+  "sad face, xoxo",
+  "bleh",
+];
+const someMethodTest = someMethod.some((x) => x.length > 10);
+console.log(someMethodTest);
 // Array.prototype.sort();
+const students = [
+  { name: "Alice", age: 20 },
+  { name: "Bob", age: 18 },
+  { name: "Charlie", age: 22 },
+];
+students.sort((a, b) => a.age - b.age);
+console.log(students);
+
 // Array.prototype.splice();
+
 // Array.prototype.toString();
-// Array.prototype.unshift();
+const stringMethod = ["i am sad cos i will be converted to a stupid string"];
+const stringMethodTest = stringMethod.toString();
+console.log(stringMethodTest);
+
+// Array.prototype.unshift();  (adds an element to the beginning of the array and returns the length of new array)
+
+const unshiftMethod = ["cat", "meow", "girl", "bleh"];
+const unshiftMethodTest = unshiftMethod.unshift("boy", "bark");
+console.log(unshiftMethodTest);
+console.log(unshiftMethod);
 // Array.prototype.values();
